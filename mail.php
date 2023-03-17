@@ -20,7 +20,7 @@ function sendEmail($subject,$body,$email,$name,$html = false){
 
 
     //ingresando destinatarios
-    $mail->setFrom('contact@jcomtec.com', 'JCOMTEC');
+    $mail->setFrom('jcomte23@outlook.com', 'Jcomte23');
     $mail->addAddress($email, $name);
 
     //Contenido del correo

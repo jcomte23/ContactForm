@@ -76,24 +76,24 @@
         <?php endif; ?>
 
 
-        <h2 class="text-center">Contact Form</h2>
+        <h2 class="text-center">Mail Sender</h2>
         <form action="./server.php" method="post" class="mt-2">
             <div class="column-row">
                 <div class="col-lg-3 mx-auto">
                     <label for="name" class="form-label">Name</label>
-                    <input type="text" class="form-control" required name="name" id="Name" placeholder="Name">
+                    <input type="text" class="form-control" required name="name" id="Name" autocomplete="off" placeholder="Your name">
                 </div>
                 <div class="col-lg-3 mx-auto">
                     <label for="email" class="form-label">Email</label>
-                    <input type="email" class="form-control" required name="email" id="Email" placeholder="Email">
+                    <input type="email" class="form-control" required name="email" id="Email" autocomplete="off" placeholder="Destination Email">
                 </div>
                 <div class="col-lg-3 mx-auto">
                     <label for="subject" class="form-label">Subject of the email</label>
-                    <input type="text" class="form-control" required name="subject" id="Subject" placeholder="Subject">
+                    <input type="text" class="form-control" required name="subject" id="Subject" autocomplete="off" placeholder="The subject of your email">
                 </div>
                 <div class="col-lg-3 mx-auto">
                     <label for="message" class="form-label">Message of the email</label>
-                    <textarea class="form-control" required name="message" id="message" rows="5" placeholder="Message"></textarea>
+                    <textarea class="form-control" required name="message" id="message" rows="5" autocomplete="off" placeholder="Message"></textarea>
                 </div>
             </div>
             <div class="text-center">
