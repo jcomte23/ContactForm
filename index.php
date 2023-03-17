@@ -53,7 +53,7 @@
                     </svg>
                 </a>
                 <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
-                    <li><a href="https://github.com/jcomte23" target="_blank" class="nav-link px-2 text-white">Jcomte23</a></li>
+                    <li><a href="./index.php"  class="nav-link px-2 text-white">Jcomte23</a></li>
                 </ul>
             </div>
         </div>
@@ -61,15 +61,14 @@
 
     <div class="column-row mt-4">
 
-        <?php if (isset($_POST["status"])) : 
-            $status=$_POST["status"]?>
-            <?php if ($status == 'danger') : ?>
+        <?php if (isset($_POST["status"])) : ?>
+            <?php if ($_POST["status"] == 'danger') : ?>
                 <div class="col-lg-4 mx-auto alert alert-danger text-center" role="alert">
                     Error,message not sent!
                 </div>
             <?php endif; ?>
 
-            <?php if ($status == 'success') : ?>
+            <?php if ($_POST["status"] == 'success') : ?>
                 <div class="col-lg-4 mx-auto alert alert-success text-center" role="alert">
                     Message sent successfully!
                 </div>
