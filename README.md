@@ -1,4 +1,4 @@
-# fileUploaderToStorage
+# ContactForm
 Program made with PHP to send contact emails to anyone
 
 ## Beginning
