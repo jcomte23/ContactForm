@@ -1,4 +1,7 @@
 <?php
+
+require "mail.php";
+
 // funcion para validar que el formulario no llego vacio al servidor
 function validateData($name, $email, $subject, $message, $btnSend)
 {
@@ -11,6 +14,11 @@ if (isset($_POST["btnSend"])) {
         $email = $_POST["email"];
         $subject = $_POST["subject"];
         $message = $_POST["message"];
+
+        $body="$name <$email> te envia el siguiente mensaje:<br><br>
+        $message";
+        //mandar email
+        sendEmail($subject,$body,$email,$name,html:true);
 
 
         $status = "success";
