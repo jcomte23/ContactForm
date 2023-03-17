@@ -67,25 +67,34 @@
         </div>
     </header>
 
-    <div class="row mt-4">
+    
+
+    <div class="column-row mt-4">
+        <div class="col-lg-4 mx-auto alert alert-danger text-center" role="alert">
+            Error,message not sent!
+          </div>
+        <div class="col-lg-4 mx-auto alert alert-success text-center" role="alert">
+            Message sent successfully!
+          </div>
         <h2 class="text-center">Contact Form</h2>
         <form action="./server.php" method="post" class="mt-2">
             <div class="column-row">
                 <div class="col-lg-3 mx-auto">
                     <label for="Name" class="form-label">Name</label>
-                    <input type="text" class="form-control" id="Name" placeholder="Name">
+                    <input type="text" class="form-control" required name="Name" id="Name" placeholder="Name">
                 </div>
                 <div class="col-lg-3 mx-auto">
                     <label for="Email" class="form-label">Email</label>
-                    <input type="email" class="form-control" id="Email" placeholder="Email">
+                    <input type="email" class="form-control" required name="Email" id="Email" placeholder="Email">
                 </div>
                 <div class="col-lg-3 mx-auto">
                     <label for="Subject" class="form-label">Subject of the email</label>
-                    <input type="text" class="form-control" id="Subject" placeholder="Subject">
+                    <input type="text" class="form-control" required name="Subject" id="Subject" placeholder="Subject">
                 </div>
                 <div class="col-lg-3 mx-auto">
                     <label for="message" class="form-label">Message of the email</label>
-                    <textarea class="form-control" id="message" name="message" rows="5" placeholder="Message"></textarea>
+                    <textarea class="form-control" required name="message" id="message" rows="5"
+                        placeholder="Message"></textarea>
                 </div>
             </div>
             <div class="text-center">
